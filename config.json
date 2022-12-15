@@ -1,4 +1,8 @@
 {
+  "explorer.fileNesting.enabled": true, // permitir navegación de directorios anidados
+  "editor.minimap.enabled": false, // desactivar minimapa
+  "editor.renderWhitespace": "all", // mostrar espacios en blanco
+  "editor.tabSize": 2, // tamaño de tabulación
   "workbench.iconTheme": "material-icon-theme", // tema de iconos
   "oneDarkPro.bold": true, // negrita en el tema One Dark Pro
   "oneDarkPro.italic": true, // cursiva en el tema One Dark Pro
@@ -7,19 +11,27 @@
   "editor.formatOnSave": true, // formato al guardar
   "editor.defaultFormatter": "esbenp.prettier-vscode", // formatea predeterminadamente es prettier
   "editor.fontWeight": "600", // ancho de la tipografia
-  "editor.tabSize": 2, //tabs
   "editor.fontLigatures": true, // ligaduras de caracteres
   "editor.guides.bracketPairs": true, // mostrar colores guías de llaves
   "editor.bracketPairColorization.enabled": true, // mostrar colores de pares de llaves
-  "editor.minimap.enabled": false, // minimapa
   "editor.wordWrap": "on", // linea no scroll a la derecha, se posisiona por debajo sin ocupar otra lina
   "editor.inlayHints.enabled": "on", // mostrar los hints en los inlays
+  "telemetry.telemetryLevel": "off", // Deshabilita la telemetría de VS Code
   "editor.inlineSuggest.enabled": true, // sugerencias en linea
   "editor.fontSize": 18, // tamaño de la tipografia
   "editor.renderLineHighlight": "line", // resaltado de las líneas
   "editor.cursorSmoothCaretAnimation": true, // animación de la selección
   "editor.cursorBlinking": "expand", //
+  "javascript.suggest.completeFunctionCalls": true, // habilita la autocompletación de llamadas de funciones
+  "typescript.suggest.completeFunctionCalls": true, // habilita la autocompletación de llamadas de funciones
   "editor.cursorWidth": 5, // estilo de la selección
+  "editor.suggest.preview": true, // habilita la vista previa de los archivos
+  "javascript.referencesCodeLens.enabled": true,
+  "javascript.referencesCodeLens.showOnAllFunctions": true,
+  "typescript.implementationsCodeLens.enabled": true,
+  "typescript.referencesCodeLens.enabled": true,
+  "typescript.referencesCodeLens.showOnAllFunctions": true,
+  "editor.guides.highlightActiveIndentation": "always", // resaltar indentación activa
   "workbench.colorCustomizations": {
     "tab.activeBackground": "#213f79", // color de la pestaña activa
     "editor.lineHighlightBorder": "#6777f3" // color de resaltado de líneas
@@ -27,7 +39,7 @@
   "window.titleBarStyle": "custom", // eliminamos puntos y comas al formatiar con prettier
   "files.autoSave": "afterDelay", // auto-salvar depois de X segundos
   "gitlens.hovers.currentLine.over": "line", // mostrar el cursor en la línea actual
-  "gitlens.currentLine.enabled": false, // mostrar el cursor en la línea actual
+  "gitlens.currentLine.enabled": true, // mostrar el cursor en la línea actual
   "javascript.updateImportsOnFileMove.enabled": "always", // actualizar imports al mover archivos
   "javascript.preferences.quoteStyle": "single", // comillas simples
   "typescript.preferences.quoteStyle": "single", // comillas simples
@@ -55,23 +67,20 @@
   "explorer.confirmDelete": false, // no confirmar eliminar archivos
   "explorer.confirmDragAndDrop": false, // no confirmar arrastrar y soltar archivos
 
-  "emmet.includeLanguages": {
-    "javascript": "javascriptreact" // emmet para JSX
-  }, // emmet para JSX
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode" // formatea predeterminadamente es prettier
   }, // formatea predeterminadamente es prettier
-  "github.copilot.enable": {
-    "*": true,
-    "yaml": false,
-    "plaintext": true,
-    "markdown": true,
-    "repos": ["*"],
-    "javascript": true
-  }, // habilitar copilot en github
+  // "github.copilot.enable": {
+  //   "*": true,
+  //   "yaml": false,
+  //   "plaintext": true,
+  //   "markdown": true,
+  //   "repos": ["*"],
+  //   "javascript": true
+  // }, // habilitar copilot en github
 
   "terminal.integrated.fontWeight": "700", // tipografia en la terminal
-  "terminal.integrated.fontFamily": " 'JetBrains Mono', 'Cascadia Code'", // tipografia en la terminal
+  "terminal.integrated.fontFamily": " 'Hack Nerd font', 'JetBrains Mono', 'Cascadia Code'", // tipografia en la terminal
   "terminal.integrated.fontSize": 16, // tamaño de la tipografia en la terminal
   "terminal.integrated.defaultProfile.linux": "zsh", // terminal por defecto en linux
   "terminal.integrated.cursorBlinking": true, // cursor en la terminal
@@ -96,15 +105,36 @@
   "eslint.useESLintClass": true,
   "javascript.format.insertSpaceAfterSemicolonInForStatements": false,
   "typescript.format.insertSpaceAfterSemicolonInForStatements": false,
-  "carbon.theme": {},
   "git.confirmSync": false,
   "git.enableSmartCommit": true,
-  "rapidapi.terminalLink.enabled": false,
-  "tabnine.experimentalAutoImports": true,
   "markdown.preview.fontSize": 18,
   "typescript.updateImportsOnFileMove.enabled": "never",
   "workbench.sideBar.location": "right",
-  "window.zoomLevel": -2,
-  "workbench.colorTheme": "One Dark Pro",
-
+  "window.zoomLevel": -1,
+  "workbench.colorTheme": "One Dark Pro Darker",
+  "diffEditor.codeLens": true, // habilita los códigos lens en el diff editor
+  "editor.codeLensFontSize": 16, // tamaño de fuente de los códigos lens
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact" // usar emmet dentro de JSX
+  },
+  "workbench.statusBar.visible": false, // Deshabilita la barra de estado
+  "typescript.format.enable": true, // habilita el formato de TS
+  "typescript.suggest.autoImports": true, // habilita la autocompletación de imports
+  "typescript.format.insertSpaceAfterConstructor": true, // insertar espacio después de los constructores de TS
+  "typescript.format.insertSpaceAfterOpeningAndBeforeClosingJsxExpressionBraces": true, // insertar espacio después de los corchetes de JSX
+  "javascript.inlayHints.enumMemberValues.enabled": true, // habilita los valores de los enumerados en los hints
+  "javascript.inlayHints.parameterNames.enabled": "all", // habilita los nombres de parámetros en los hints
+  "javascript.inlayHints.parameterTypes.enabled": true, // habilita los tipos de parámetros en los hints
+  "javascript.inlayHints.propertyDeclarationTypes.enabled": true, // habilita los tipos de propiedades en los hints
+  "javascript.inlayHints.variableTypes.enabled": true, // habilita los tipos de variables en los hints
+  "typescript.inlayHints.enumMemberValues.enabled": true, // habilita los valores de los enumerados en los hints
+  "typescript.inlayHints.variableTypes.enabled": true, // habilita los tipos de variables en los hints
+  "typescript.inlayHints.parameterTypes.enabled": true, // habilita los tipos de parámetros en los hints
+  "typescript.inlayHints.propertyDeclarationTypes.enabled": true, // habilita los tipos de propiedades en los hints
+  "typescript.inlayHints.parameterNames.enabled": "all",
+  "typescript.autoClosingTags": true,
+  "grunt.autoDetect": "on",
+  "gulp.autoDetect": "on",
+  "javascript.inlayHints.functionLikeReturnTypes.enabled": true,
+  "typescript.inlayHints.functionLikeReturnTypes.enabled": true // habilita los nombres de parámetros en los hints
 }
