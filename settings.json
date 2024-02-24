@@ -1,0 +1,199 @@
+{
+    "[css]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.formatOnType": true
+    },
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode", // formatea predeterminadamente es prettier
+        "editor.formatOnType": true
+    },
+    "[javascriptreact]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.formatOnType": true
+    },
+    "[jsonc]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "[typescript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.formatOnType": true
+    },
+    "[typescriptreact]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.formatOnType": true
+    },
+    // "breadcrumbs.enabled": false,
+    // "breadcrumbs.filePath": "off",
+    // "breadcrumbs.icons": false,
+    "color-highlight.enable": true,
+    "color-highlight.matchRgbWithNoFunction": true,
+    "color-highlight.matchWords": true,
+    "editor.bracketPairColorization.enabled": true, // numero de espacios en los tabs
+    "editor.codeActionsOnSave": [
+        "source.organizeImports",
+        "editor.formatDocument"
+    ],
+    "editor.cursorBlinking": "expand", // animacion del pulsado del cursor
+    "editor.cursorSmoothCaretAnimation": "on", // animación del  cursor
+    "editor.cursorStyle": "line",
+    "editor.cursorWidth": 3, // grosor de la barra del cursor
+    "editor.fontFamily": " 'JetBrainsMono Nerd Font', 'FiraCode Nerd Font','CaskaydiaCove Nerd Font', 'Hack Nerd Font', 'Droid Sans Mono', 'monospace'", // tipografias a usar
+    "editor.fontLigatures": true, // ligaduras en las fuentes de letras
+    "editor.fontSize": 18, // size de la letra del editor
+    "editor.fontWeight": "400", // grosor de la fuente de letras
+    "editor.formatOnSave": true, // formateado al  guardar el archivo
+    // "editor.glyphMargin": false, // iconos y debbugin junto a los numeros del codigo
+    "editor.guides.bracketPairs": "active", // colores en las identaciones de blocke de codigo
+    "editor.guides.highlightActiveIndentation": "always", // resaltar indentación activa
+    // "editor.guides.indentation": false, // guia de identacion de los blockes de codigo
+    "editor.hideCursorInOverviewRuler": true, // posicion del cursor en el scroll vertical
+    "editor.inlayHints.enabled": "on", // mostrar los hints en los inlays
+    "editor.inlineSuggest.enabled": true, // habilitar o deshabilitar la sugerencia de código en línea
+    "editor.lineHeight": 1.5, // altura de los renglones
+    "editor.lineNumbers": "relative", // numeros a la izquierda del codigo
+    // "workbench.editor.showTabs": false, // barra de las pestanas abiertas
+    "editor.linkedEditing": true, // edit two tag html and jsx
+    "editor.matchBrackets": "never",
+    "editor.minimap.enabled": false, // minimapa
+    "editor.overviewRulerBorder": false, // border left del scroll vertical
+    "editor.renderLineHighlight": "all", // resaltado de las líneas
+    "editor.renderWhitespace": "none", // mostrar espacios en blanco
+    "editor.scrollbar.vertical": "auto", // scroll vertical del archivo
+    "editor.scrollbar.verticalScrollbarSize": 6, // grosor del scroll vertical
+    "editor.snippetSuggestions": "bottom",
+    "editor.suggest.preview": true, // habilita la vista previa de los archivos
+    "editor.suggest.showColors": true,
+    "editor.suggest.showSnippets": true,
+    "editor.suggestSelection": "recentlyUsed",
+    "editor.wordWrap": "on", // scroll horizontal, se posisiona por debajo sin ocupar otra lina
+    // "emojisense.languages": {
+    //     "*scminput*": true,
+    //     "*script*": true,
+    //     "javascript": true,
+    //     "javascriptreact": true,
+    //     "json": true,
+    //     "markdown": true,
+    //     "plaintext": false,
+    //     "rust": true,
+    //     "scminput": true, // language used in the source control commit message box
+    //     "typescript": true,
+    //     "typescriptreact": true
+    // },
+    // "errorLens.enabled": true, // mostrar el errorLens
+    // "errorLens.enabledDiagnosticLevels": [
+    //     "error",
+    //     "warning",
+    //     "info",
+    //     "hint"
+    // ], // mostrar errores de todos los
+    // "errorLens.fontSize": "1rem", // tamaño de la tipografia en el errorLens
+    // "errorLens.fontStyleItalic": true, // tipografia en el errorLens
+    // // "errorLens.excludeBySource": ["[eslint]"], // excluir errores de eslint
+    // // "errorLens.excludePatterns": [
+    // //   "[\"**/*.{ts, js, jsx, tsx, css, html, php, rust}\"]"
+    // // ], // seguir el cursor en todos los errores
+    // "errorLens.gutterIconsEnabled": true, // mostrar iconos en el errorLens
+    // "errorLens.messageTemplate": "$message", // mostrar el mensaje en el errorLens
+    // "errorLens.severityText": [
+    //     "ERROR",
+    //     "WARNING",
+    //     "INFO",
+    //     "HINT"
+    // ], // mostrar el errorLens
+    // "errorLens.statusBarColorsEnabled": true, // mostrar colores en el errorLens
+    // "errorLens.statusBarIconsEnabled": true, // mostrar iconos en el errorLens
+    // "errorLens.statusBarMessageEnabled": true, // mostrar mensaje en el errorLens
+    "eslint.validate": [
+        "javascript",
+        "javascriptreact",
+        "typescript",
+        "typescriptreact"
+    ],
+    "excalidraw.theme": "dark",
+    "explorer.confirmDelete": false,
+    "explorer.confirmDragAndDrop": false,
+    "explorer.fileNesting.enabled": true, // permitir navegación de directorios anidados
+    "explorer.fileNesting.patterns": {
+        ".env": ".env*",
+        "docker-compose.yml": ".dockerignore, Dockerfile",
+        "next.config.js": "next-env.d.ts",
+        "package.json": "package-lock.json, yarn.lock, pnpm-lock.yaml,.gitignore, .eslintrc.json, .prettierrc",
+        "tailwind.config.js": "postcss.config.js",
+        "tsconfig.json": "tsconfig.json"
+    },
+    "files.autoSave": "afterDelay", // auto guardado despues del delay
+    "files.autoSaveDelay": 1000, // thema del editor
+    "git.autofetch": true,
+    "html.completion.attributeDefaultValue": "singlequotes", // comillas simples
+    "indenticator.color.dark": "rgba(255,255,255,0.1)", // color de linea de identacion
+    "indenticator.width": 0.1, // grosor de la linea de identacion
+    "javascript.preferences.importModuleSpecifier": "relative",
+    "javascript.preferences.quoteStyle": "single", // comillas simples
+    "javascript.referencesCodeLens.enabled": false, // muestra información adicional en línea sobre el código, como referencias, métodos de prueba y más
+    "javascript.referencesCodeLens.showOnAllFunctions": true,
+    "javascript.suggest.autoImports": true, // habilita la autocompletación de imports
+    "javascript.suggest.completeFunctionCalls": true, // habilita la autocompletación de llamadas de funciones
+    // "gitlens.hovers.currentLine.over": "line", // mostrar el cursor en la línea actual
+    // "gitlens.currentLine.enabled": true, // mostrar el cursor en la línea actual
+    "javascript.updateImportsOnFileMove.enabled": "always", // actualizar imports al mover archivos
+    "json.sortOnSave.enable": true,
+    "prettier.jsxSingleQuote": true, // comillas simples en JSX
+    "prettier.printWidth": 140,
+    "prettier.semi": false, // remover los puntos y comas en JS
+    "prettier.singleQuote": true, // comillas simples en todo el código
+    "prettier.tabWidth": 2,
+    "telemetry.telemetryLevel": "off", // desactivamos parametro dsactivables de la telimetria
+    "terminal.integrated.env.linux": {},
+    "terminal.integrated.fontFamily": " 'JetBrainsMono Nerd Font', 'FiraCode Nerd Font','CaskaydiaCove Nerd Font', 'Hack Nerd Font', 'Droid Sans Mono', 'monospace'",
+    "typescript.implementationsCodeLens.enabled": true,
+    "typescript.preferences.importModuleSpecifier": "relative",
+    "typescript.preferences.quoteStyle": "single", // comillas simples
+    // "typescript.referencesCodeLens.enabled": false, // muestra información adicional en línea sobre el código, como referencias, métodos de prueba y más
+    "typescript.referencesCodeLens.showOnAllFunctions": true,
+    "typescript.suggest.autoImports": true, // habilita la autocompletación de imports
+    "typescript.suggest.completeFunctionCalls": true, // habilita la autocompletación de llamadas de funciones
+    "typescript.updateImportsOnFileMove.enabled": "always", // actualizar imports al mover archivos
+    "window.commandCenter": true, // zoom del editor
+    "window.titleBarStyle": "custom",
+    "workbench.colorCustomizations": {},
+    "workbench.colorTheme": "One Dark Pro Darker",
+    // "workbench.editor.enablePreview": false, // editores de vista previa
+    // "workbench.editor.wrapTabs": false,
+    "workbench.editor.labelFormat": "long",
+    "workbench.editor.languageDetection": true, // deteccion automatica de lenguage
+    "workbench.editor.revealIfOpen": false, // redirecccion ala la ventanas que ya estan abiertas
+    "workbench.editor.sharedViewState": true, // uso compartido de las instandias de el editor
+    "workbench.editor.tabSizing": "shrink", // strech tabs
+    "workbench.iconTheme": "material-icon-theme", // thema de iconos del editor
+    "workbench.sideBar.location": "right",
+    // "workbench.tree.indent": 16,
+    "yaml.customTags": [
+        "!And",
+        "!And sequence",
+        "!If",
+        "!If sequence",
+        "!Not",
+        "!Not sequence",
+        "!Equals",
+        "!Equals sequence",
+        "!Or",
+        "!Or sequence",
+        "!FindInMap",
+        "!FindInMap sequence",
+        "!Base64",
+        "!Join",
+        "!Join sequence",
+        "!Cidr",
+        "!Ref",
+        "!Sub",
+        "!Sub sequence",
+        "!GetAtt",
+        "!GetAZs",
+        "!ImportValue",
+        "!ImportValue sequence",
+        "!Select",
+        "!Select sequence",
+        "!Split",
+        "!Split sequence"
+    ]
+}
